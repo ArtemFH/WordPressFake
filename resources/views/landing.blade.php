@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    @section('head')
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet">
-        <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-        <link href="{{ asset('css/style.css') }}" media="all" rel="stylesheet" type="text/css"/>
-        <link href="{{ asset('css/app.css') }}" media="all" rel="stylesheet" type="text/css"/>
-    @show
-</head>
+@extends('layouts.base')
 <body class="is-boxed has-animations">
 <div class="body-wrap boxed-container">
     <header class="site-header text-light">
