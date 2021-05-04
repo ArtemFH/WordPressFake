@@ -58,32 +58,20 @@
             <div class="features-extended-inner section-inner">
                 <div class="features-extended-wrap">
                     <div class="container">
-                        <div class="feature-extended">
-                            <div class="feature-extended-image">
-                                <div class="mockup-bg">
-                                    <img src="../images/iphone-feature-bg-01.svg" alt="iPhone Feature 01 illustration">
+                        @foreach($posts as $index)
+                            <div class="feature-extended">
+                                <div class="feature-extended-image">
+                                    <div class="mockup-bg">
+                                        <img src="../images/iphone-feature-bg-02.svg" alt="iPhone Feature 02 illustration">
+                                    </div>
+                                    <img class="device-mockup is-revealing" src="../images/iphone-feature-02.png" alt="iPhone Feature 02">
                                 </div>
-                                <img class="device-mockup is-revealing" src="../images/iphone-feature-01.png" alt="iPhone Feature 01">
-                            </div>
-                            <div class="feature-extended-body is-revealing">
-                                <h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-                                <p class="m-0">Quam quisque id diam vel quam elementum pulvinar. Ut etiam sit amet nisl purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam
-                                    donec.</p>
-                            </div>
-                        </div>
-                        <div class="feature-extended">
-                            <div class="feature-extended-image">
-                                <div class="mockup-bg">
-                                    <img src="../images/iphone-feature-bg-02.svg" alt="iPhone Feature 02 illustration">
+                                <div class="feature-extended-body is-revealing">
+                                    <h3 class="mt-0 mb-16">{{$index->title}}</h3>
+                                    <p class="m-0">{{$index->description}}</p>
                                 </div>
-                                <img class="device-mockup is-revealing" src="../images/iphone-feature-02.png" alt="iPhone Feature 02">
                             </div>
-                            <div class="feature-extended-body is-revealing">
-                                <h3 class="mt-0 mb-16">Amazing features, coming soon.</h3>
-                                <p class="m-0">Quam quisque id diam vel quam elementum pulvinar. Ut etiam sit amet nisl purus in mollis nunc. Odio morbi quis commodo odio aenean sed adipiscing diam
-                                    donec.</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
