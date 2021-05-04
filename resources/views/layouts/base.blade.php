@@ -168,5 +168,5 @@
     </footer>
 </div>
 </body>
-<script src="{{ asset('js/main.min.css') }}"></script>
+<script src="{{ asset('js/main.min.js') }}"></script>
 </html>
